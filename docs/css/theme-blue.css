@@ -1,0 +1,49 @@
+/* here in this showcase we use our own modified chroma syntax highlightning style;
+   if you want to use a predefined style instead:
+   - remove `markup.highlight.noClasses` from your config.toml
+   - set `markup.highlight.style` to a predefined style name in your config.toml
+   - remove the following `@import` of the self-defined chroma stylesheet */
+@import "chroma-learn.css";
+
+:root {
+    --MAIN-TEXT-color: rgb(255, 255, 255); /* Color of text by default */
+    --MAIN-TITLES-TEXT-color: rgb(6, 172, 255); /* Color of titles h2-h3-h4-h5-h6 */
+    --MAIN-TITLES-H1-color: rgb(6, 172, 255); /* text color of h1 titles */
+    --MAIN-LINK-color: rgb(100, 170, 231); /* Color of links */
+    --MAIN-LINK-HOVER-color: rgb(142, 191, 233); /* Color of hovered links */
+    --MAIN-BG-color: rgb(71, 67, 67); /* color of text by default */
+
+    /* adjusted to base16-snazzy chroma style */
+    --CODE-BLOCK-color: rgb(6, 172, 255); /* fallback color for code text */
+    --CODE-BLOCK-BG-color: rgba( 40, 42, 54, 1 ); /* fallback color for code background */
+    --CODE-BLOCK-BORDER-color: rgb(0, 0, 0); /* color of block code border */
+
+    --CODE-INLINE-color: rgb(9, 136, 255); /* color for inline code text */
+    --CODE-INLINE-BG-color: rgb(9, 136, 255); /* color for inline code background */
+    --CODE-INLINE-BORDER-color: rgba( 248, 232, 200, 1 ); /* color of inline code border */
+
+    --MENU-HOME-LINK-color: rgb(8, 8, 8); /* Color of the home button text */
+    --MENU-HOME-LINK-HOVER-color: rgb(131, 128, 128); /* Color of the hovered home button text */
+
+    --MENU-HEADER-BG-color: rgb(9, 136, 255); /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: rgb(105, 101, 101); /*Color of menu header border */
+
+    --MENU-SEARCH-color: rgb(255, 253, 253); /* Color of search field text */
+    --MENU-SEARCH-BG-color: rgb(0, 0, 0); /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BORDER-color: rgb(71, 67, 67); /* Override search field border color */
+
+    --MENU-SECTIONS-ACTIVE-BG-color: rgb(117, 115, 115); /* Background color of the active section and its children */
+    --MENU-SECTIONS-BG-color: rgb(117, 115, 115); /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color: rgb(0, 0, 0); /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: rgb(0, 0, 0);  /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: rgb(0, 0, 0); /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: rgb(126, 123, 123); /* Color of background for the active category (only) */
+
+    --MENU-VISITED-color: rgb(136, 255, 0); /* Color of 'page visited' icons in menu */
+    --MENU-SECTION-SEPARATOR-color: rgb(138, 204, 242); /* Color of <hr> separator in menu */
+
+    /* base styling for boxes */
+    --BOX-CAPTION-color: rgb(0, 0, 0); /* color of the title text */
+    --BOX-BG-color: rgba(0, 0, 0, 0.833); /* color of the content background */
+    --BOX-TEXT-color: rgb(0, 0, 0); /* fixed color of the content text */
+}
