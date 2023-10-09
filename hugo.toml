@@ -1,0 +1,45 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'hugo-theme-relearn'
+defaultContentLanguage = "es"
+
+[params]
+  themeVariant = ["dwes", "blue", "red", "green","dark"]
+
+
+[[menu.shortcuts]]
+name="<i class='fab fa-php'></i>   Lenguaje php"
+identified=""
+url="https://php.net"
+weight=1
+
+[[menu.shortcuts]]
+name="<i class='fab fa-wikipedia-w'></i>   Wiki del curso"
+identified=""
+url="https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido"
+weight=2
+
+[[menu.shortcuts]]
+name="<i class='far fa-question-circle'></i>   Ejercicios resueltos"
+identified=""
+url="http://manuel.infenlaces.com/dwes/ejercicios/"
+weight=3
+
+[Languages]
+    [Languages.en]
+        title = "Example use language"
+        weight = 2
+        languageName = "English"
+        ContentDir="content/en"
+
+    [Languages.es]
+        title = "Ejemplo para el uso de idiomas"
+        weight = 1
+        languageName = "Español"
+        ContentDir="content/es"
+   [Languages.fr]
+        title = "Exemple d'utilisation des langues"
+        weight = 1
+        languageName = "Français"
+        ContentDir="content/fr"
